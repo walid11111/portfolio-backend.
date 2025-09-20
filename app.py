@@ -1,4 +1,3 @@
-# backend/app.py
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
@@ -18,7 +17,7 @@ app = FastAPI(title="Portfolio Chatbot API")
 # Enable CORS for frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Update to ["http://localhost:3000"] in production
+    allow_origins=["https://portfolio-frontend-5t25.vercel.app"],  # Updated with Vercel frontend URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
