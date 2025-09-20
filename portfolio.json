@@ -1,0 +1,193 @@
+{
+  "name": "Walid Khan",
+  "title": "AI Engineer",
+  "contact": {
+    "phone": "+923149442379",
+    "email": "swatwalid4142@gmail.com",
+    "location": "Swat, KPK, Pakistan",
+    "github": "https://github.com/walid11111",
+    "linkedin": "https://www.linkedin.com/in/walid-khan-aa691726a/"
+  },
+  "summary": "AI Engineer with hands-on experience in Machine Learning, Deep Learning, NLP, and Computer Vision. As a dedicated AI student, I am pursuing a Bachelor’s degree in Artificial Intelligence, continuously enhancing my expertise through practical projects and advanced training.",
+  "about": {
+    "whoIAm": {
+      "description": [
+        "I am a passionate AI Engineer and AI student with a strong foundation in machine learning, deep learning, and artificial intelligence. My journey in AI began with curiosity about how machines can learn and make decisions, and it has evolved into a professional pursuit of creating intelligent systems that solve real-world problems.",
+        "With expertise in Python, TensorFlow, PyTorch, and various AI frameworks, I enjoy pushing the boundaries of what's possible with AI. I believe in continuous learning and staying updated with the latest advancements in the field, complemented by my academic journey as an AI student."
+      ]
+    }
+  },
+  "education": [
+    {
+      "degree": "Bachelor of Science in Artificial Intelligence",
+      "university": "University of Engineering and Technology Mardan (UETM)",
+      "duration": "08/2022 – 05/2026",
+      "cgpa": "3.67/4.0",
+      "tags": ["Bachelor", "AI", "Artificial Intelligence", "UETM", "BS AI"],
+      "keywords": ["AI degree", "artificial intelligence student", "UET Mardan education", "CGPA 3.67"]
+    }
+  ],
+  "skills": {
+    "core": ["Artificial Intelligence", "Machine Learning", "Deep Learning", "NLP", "Computer Vision"],
+    "frameworks": ["TensorFlow", "PyTorch", "FastAPI", "HuggingFace", "LangChain", "YOLOv11"],
+    "tools": ["Git", "Gradio", "Streamlit", "OpenCV", "FAISS", "Jupyter", "Google Colab", "VS Code"],
+    "databases": ["MySQL"],
+    "soft_skills": {
+      "skills": ["Problem Solving", "Communication", "Teamwork"],
+      "description": [
+        "Problem Solving: Optimized machine learning models during internship, improving accuracy and efficiency.",
+        "Communication: Presented AI projects at GIK Bootcamp to diverse audiences.",
+        "Teamwork: Collaborated on team-based FYP to develop a university chatbot."
+      ]
+    },
+    "tags": ["AI", "ML", "DL", "NLP", "Computer Vision", "LangChain", "YOLO", "Python", "TensorFlow", "PyTorch"],
+    "keywords": ["artificial intelligence skills", "machine learning engineer skills", "deep learning developer", "NLP expert", "computer vision projects"]
+  },
+  "experience": [
+    {
+      "role": "Machine Learning Intern",
+      "company": "CodeAlpha Pakistan",
+      "duration": "10/2024 – 01/2025",
+      "achievements": [
+        "Developed and optimized ML models, performing preprocessing and predictive analytics on real datasets.",
+        "Worked on automation pipelines, improving model accuracy and deployment readiness."
+      ],
+      "tags": ["Internship", "Machine Learning", "CodeAlpha"],
+      "keywords": ["ML intern", "machine learning experience", "CodeAlpha Pakistan internship"]
+    },
+    {
+      "role": "Advanced AI Bootcamp Trainee",
+      "organization": "GIK Institute & Asher Aziz Foundation",
+      "duration": "07/2025 – 08/2025",
+      "achievements": [
+        "Completed hands-on training in Machine Learning, Deep Learning, Computer Vision, NLP, Transformers, MLOps, and Generative AI.",
+        "Built and deployed real-world AI projects using TensorFlow, PyTorch, MLflow, Docker, and CI/CD pipelines."
+      ],
+      "tags": ["Bootcamp", "AI Training", "GIK", "Generative AI", "MLOps"],
+      "keywords": ["AI bootcamp trainee", "GIK advanced AI", "Generative AI training", "MLOps bootcamp"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Tool Calling AI Agent (LangChain)",
+      "link": "https://github.com/walid11111/ToolCallingAIAgentGIK",
+      "description": "Developed an AI agent using LangChain to perform tool calling for task automation, integrating external APIs for enhanced functionality.",
+      "tags": ["LangChain", "AI Agent", "Tool Calling"],
+      "keywords": ["LangChain project", "AI agent with tools", "automation with APIs"]
+    },
+    {
+      "name": "Document-AI-Assistant-RAG",
+      "link": "https://github.com/walid11111/Document-AI-Assistant-RAG",
+      "description": "Built a Retrieval-Augmented Generation (RAG) based AI assistant for document querying, leveraging LangChain and FAISS for efficient information retrieval.",
+      "tags": ["RAG", "LangChain", "FAISS"],
+      "keywords": ["document AI assistant", "RAG chatbot", "LangChain FAISS project"]
+    },
+    {
+      "name": "Object Detection & Segmentation (YOLOv11n-seg)",
+      "link": "https://github.com/walid11111/Custom-Dataset-for-Object-Detection-Instance-Segmentation",
+      "description": "Implemented YOLOv11n for object detection and instance segmentation on custom datasets, focusing on real-time computer vision applications.",
+      "tags": ["YOLOv11", "Object Detection", "Segmentation"],
+      "keywords": ["YOLO object detection", "image segmentation", "custom dataset computer vision"]
+    },
+    {
+      "name": "Fashion-MNIST Classifier (VGG16)",
+      "link": "https://github.com/walid11111/fashion-mnist-vgg16-classifier",
+      "description": "Created a clothing image classifier using VGG16 architecture, fine-tuned on the Fashion-MNIST dataset for accurate classification.",
+      "tags": ["VGG16", "Image Classification", "Fashion-MNIST"],
+      "keywords": ["VGG16 project", "fashion dataset", "image classification deep learning"]
+    },
+    {
+      "name": "Construction Site Safety (YOLOv11n)",
+      "link": "https://github.com/walid11111/Construction-Site-Safety-Detection",
+      "description": "Developed a safety detection system for construction sites using YOLOv11n, identifying hazards like missing helmets or unsafe zones.",
+      "tags": ["YOLOv11", "Safety Detection", "Computer Vision"],
+      "keywords": ["construction site safety AI", "YOLO hazard detection", "computer vision safety project"]
+    },
+    {
+      "name": "CardioNet – Heart Disease Detection",
+      "link": "https://github.com/walid11111/CardioNet-Intelligent-system-for-heart-disease-detection",
+      "description": "Designed an intelligent system for heart disease prediction using machine learning models, trained on clinical datasets for high accuracy.",
+      "tags": ["Healthcare", "Heart Disease", "Machine Learning"],
+      "keywords": ["CardioNet project", "heart disease prediction", "AI in healthcare"]
+    },
+    {
+      "name": "PDF Malware Detection (LSTM)",
+      "link": "https://github.com/walid11111/PDF-Malware-Detection-Using-LSTM",
+      "description": "Built an LSTM-based model to detect malicious content in PDF files, enhancing cybersecurity through deep learning techniques.",
+      "tags": ["Cybersecurity", "LSTM", "PDF Malware Detection"],
+      "keywords": ["LSTM malware detection", "cybersecurity AI", "PDF malicious content detection"]
+    },
+    {
+      "name": "AgriClimate Risk Prediction (ANN)",
+      "link": "https://github.com/walid11111/AgriClimateRisk-2025-ANN",
+      "description": "Developed an ANN model to predict climate-related risks for agriculture, using historical data to support sustainable farming.",
+      "tags": ["Agriculture", "Climate Risk", "ANN"],
+      "keywords": ["agriculture AI", "climate risk prediction", "ANN project"]
+    },
+    {
+      "name": "Diabetes & Stress Prediction Models",
+      "link": "https://github.com/walid11111/Diabetes-Prediction",
+      "description": "Created machine learning models to predict diabetes and stress levels, utilizing health data for preventive healthcare solutions.",
+      "tags": ["Healthcare", "Diabetes Prediction", "Stress Prediction"],
+      "keywords": ["diabetes prediction AI", "stress prediction models", "preventive healthcare AI"]
+    },
+    {
+      "name": "AI Chatbot for University Prospectus",
+      "link": "https://github.com/walid11111/University-Chatbot-FYP",
+      "description": "Developed an AI-powered chatbot to assist with university prospectus queries, using NLP and LangChain, as part of a team project supervised by Dr. Tariq Sadad at UET Mardan.",
+      "tags": ["Chatbot", "NLP", "LangChain", "FYP"],
+      "keywords": ["university chatbot", "AI prospectus assistant", "NLP final year project"]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Certificate of Appreciation – Kashmir Solidarity Day",
+      "provider": "University of Engineering and Technology Mardan",
+      "date": "02/2023",
+      "description": "Awarded for services and dedication during Kashmir Solidarity Day event organized by UET Mardan.",
+      "student_name": "Walid Khan",
+      "tags": ["UETM", "Certificate of Appreciation"],
+      "keywords": ["Kashmir Solidarity Day certificate", "UET Mardan appreciation award"]
+    },
+    {
+      "title": "AI For Everyone",
+      "provider": "DeepLearning.AI (Coursera)",
+      "date": "07/2024",
+      "description": "Completed online course by Andrew Ng, covering the fundamentals and applications of Artificial Intelligence.",
+      "student_name": "Walid Khan",
+      "link": "https://coursera.org/verify/D2WKWNLVNWNV",
+      "tags": ["AI", "Coursera", "DeepLearning.AI"],
+      "keywords": ["AI For Everyone certificate", "Andrew Ng course", "Coursera AI course"]
+    },
+    {
+      "title": "Python Crash Course for Data Science",
+      "provider": "PNY Trainings",
+      "date": "08/2024",
+      "description": "Completed 4-month hands-on training covering Python, Machine Learning, Artificial Intelligence, and Big Data Hadoop ecosystem.",
+      "student_name": "Walid Khan",
+      "tags": ["Python", "PNY Trainings", "Data Science"],
+      "keywords": ["Python crash course", "PNY training certificate", "data science training"]
+    },
+    {
+      "title": "Certificate of Achievement",
+      "provider": "Advanced AI Bootcamp (organized by GIK Institute and the Afeef Karim Foundation)",
+      "date": "07/2025 – 08/2025",
+      "description": "For commendably securing second place in the project competition at the Advanced AI Bootcamp organized by the GIK Institute and the Afeef Karim Foundation.",
+      "student_name": "Walid Khan",
+      "signed_by": ["Mr. Ashar Aziz (CEO, SkyLab)", "Prof. Dr. Faisal Ahmed Khalid, SI (Rector, GIK Institute)"],
+      "tags": ["AI Bootcamp", "Achievement", "GIK"],
+      "keywords": ["AI bootcamp certificate", "GIK project competition", "Afeef Karim Foundation award"]
+    },
+    {
+      "title": "Certificate of Completion",
+      "provider": "Advanced AI Bootcamp (organized by GIK Institute and the Afeef Karim Foundation)",
+      "date": "07/2025 – 08/2025",
+      "description": "For successfully completing the training at the Advanced AI Bootcamp organized by the GIK Institute and the Afeef Karim Foundation.",
+      "student_name": "Walid Khan",
+      "signed_by": ["Mr. Ashar Aziz (CEO, SkyLab)", "Prof. Dr. Faisal Ahmed Khalid, SI (Rector, GIK Institute)"],
+      "tags": ["AI Bootcamp", "Completion", "GIK"],
+      "keywords": ["AI bootcamp completion", "GIK advanced AI training", "Afeef Karim Foundation bootcamp"]
+    }
+  ],
+  "languages": ["English (Proficient)", "Urdu (Native)", "Pashto (Native)"]
+}
