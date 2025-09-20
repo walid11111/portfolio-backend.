@@ -1,4 +1,3 @@
-# rag_utils.py (Updated to fix validation error and align input keys)
 import os
 from dotenv import load_dotenv
 from langchain_community.vectorstores import FAISS
@@ -18,11 +17,21 @@ def get_rag_chain():
     # Path setup for vectorstore (built from portfolio.json)
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     vectorstore_path = os.path.join(BASE_DIR, "vectorstore")
-
-    # Load embeddings model (consistent with build_embeddings.py)
-    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     
-    # Load FAISS vectorstore
+    # Verify path exists and is a directory
+    if not os.path.exists(vectorstore_path):
+        raise FileNotFoundError(f"Vectorstore directory not found at {vectorstore_path}. Run build_embeddings.py locally first.")
+    if not os.path.isdir(vectorstore_path):
+        raise ValueError(f"Vectorstore path {vectorstore_path} is not a directory. Expected index.faiss and index.pkl inside.")
+    
+    print(f"Loading vectorstore from: {vectorstore_path}")  # For debugging in Vercel logs
+
+    # Load FAISS vectorstore with precomputed embeddings
+    embeddings = HuggingFaceEmbeddings(
+        model_name="sentence-transformers/all-MiniLM-L6-v2",
+        model_kwargs={'device': 'cpu'},
+        encode_kwargs={'normalize_embeddings': True}
+    )  # Minimal embedding model for FAISS deserialization
     vectorstore = FAISS.load_local(
         vectorstore_path,
         embeddings,
@@ -32,12 +41,11 @@ def get_rag_chain():
     # Connect to Groq LLM with a versatile model
     llm = ChatGroq(
         api_key=api_key,
-        model_name="llama-3.3-70b-versatile",  # Updated to a more recent supported model for better performance
-        temperature=0.3  # Low temperature for factual, resume-based responses
+        model_name="llama-3.3-70b-versatile",
+        temperature=0.3
     )
 
-    # Enhanced prompt template: Ensures responses are natural, concise, and strictly based on portfolio.json data
-    # Enhanced prompt template: Starts directly with the answer, avoiding introductions
+    # Enhanced prompt template: Unchanged
     prompt_template = """
 You are a professional AI assistant for Walid Khan's portfolio website. Answer the question directly and concisely based **only** on the provided context from Walid's resume/portfolio and the conversation history. Do not include introductory phrases like "Hello, I'm an AI assistant" or "Introduction to Walid Khan." Begin the response immediately with the relevant information (e.g., "Walid Khan is an AI Engineer..."). Follow these guidelines:
 
@@ -70,7 +78,7 @@ You are a professional AI assistant for Walid Khan's portfolio website. Answer t
     memory = ConversationBufferMemory(
         memory_key="chat_history",
         return_messages=True,
-        input_key="question"  # Align with the chain's default input key
+        input_key="question"
     )
 
     # Build Conversational Retrieval-Augmented QA chain with memory
@@ -80,7 +88,7 @@ You are a professional AI assistant for Walid Khan's portfolio website. Answer t
         retriever=vectorstore.as_retriever(search_kwargs={"k": 10}),
         memory=memory,
         combine_docs_chain_kwargs={"prompt": prompt},
-        return_source_documents=False  # No need to return sources in response
+        return_source_documents=False
     )
 
     return chain
